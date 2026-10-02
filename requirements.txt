@@ -1,0 +1,9 @@
+# V1 development dependency candidates. Installation compatibility is not yet validated.
+# Freeze versions after the team verifies a common environment.
+numpy
+pandas
+requests
+PuLP
+streamlit
+pytest
+# Forecast libraries are intentionally deferred until V2 necessity is confirmed.
