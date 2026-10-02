@@ -23,7 +23,7 @@
 - V1은 알려진 가격, UTC 1시간, 비중단 고정 MW 작업, 기본부하 0, 배터리 없음.
 - 실제 비용 표현은 Wholesale Cost Proxy.
 - Forecast·CVaR·Battery는 후속 검증. 현재 구현되지 않았다.
-- 원격 repository visibility는 사용자 선택 대기. public/private를 임의 선택하지 않는다.
+- 원격 repository visibility는 사용자가 **Public**으로 선택했다.
 - 소스 라이선스는 아직 선택하지 않았다. 데이터 라이선스와 구분한다.
 
 ### 미완료
@@ -31,7 +31,16 @@
 - 데이터 계약·수집 파이프라인·baseline·validator·MILP·evaluator·UI 구현.
 - 실제 실행 테스트·의존성 설치 검증·공통 환경 고정.
 - 실제 사용자·요금계약·경쟁 서비스·ML 필요성 검증.
-- 원격 생성·push: visibility 결정 및 연결 경로 확인 후 진행.
+- 모델·평가·UI 구현은 원격 생성·push 완료와 별개로 미완료다.
+
+### 원격 연결 완료
+
+- GitHub connector와 저장된 Git 인증 모두 `5castlemin` 계정 확인.
+- Public repository: https://github.com/5castlemin/dovengers
+- `origin`: `https://github.com/5castlemin/dovengers.git`
+- `main`의 초기 commit `a42bd93`를 push했고 `origin/main` 추적을 설정했다.
+- 초기 commit message: `chore: initialize dovengers project structure`.
+- README와 scaffold 공개 완료는 실제 모델·앱·테스트 구현 완료를 의미하지 않는다.
 
 ### 원본 추적
 
